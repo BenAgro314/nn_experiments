@@ -1,0 +1,8 @@
+numpy
+scipy
+pandas
+open3d==0.10.0.0
+black
+torch
+torchvision
+torchaudio
