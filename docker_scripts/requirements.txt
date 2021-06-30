@@ -6,3 +6,5 @@ black
 torch
 torchvision
 torchaudio
+python-youtube
+youtube_transcript_api
