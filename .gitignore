@@ -1,2 +1,3 @@
 *.pkl
 experiments/lex_scrape/config.py
+*.pyc
