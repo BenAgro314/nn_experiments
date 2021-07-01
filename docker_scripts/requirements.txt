@@ -8,3 +8,6 @@ torchvision
 torchaudio
 python-youtube
 youtube_transcript_api
+wordfreq
+sklearn
+nltk

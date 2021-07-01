@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import pickle
+import os
 from youtube_transcript_api import (
     YouTubeTranscriptApi,
     TranscriptsDisabled,
@@ -53,5 +54,8 @@ if __name__ == "__main__":
             print(res[:l] + " ...")
             texts[video_id] = res
 
-        with open("data/transcripts.pkl", "wb") as stream:
-            pickle.dump(texts, stream)
+    if not os.path.isdir("data"):
+        os.mkdir("data")
+
+    with open("data/transcripts.pkl", "wb") as stream:
+        pickle.dump(texts, stream)
